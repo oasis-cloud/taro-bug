@@ -14,7 +14,6 @@ function Index() {
     setPageNum(pageNum + 1)
   }
   const onRefresh = () => {
-    debugger
     return new Promise<void>((resolve) => {
       setTimeout(() => {
         resolve()
