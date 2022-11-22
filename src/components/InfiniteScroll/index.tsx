@@ -29,6 +29,9 @@ function InfiniteScroll({
     if (noMore) return
     onReachBottom()
   }
+  const onScroll = (e) => {
+    setScrollTop(e.detail.scrollTop)
+  }
   return (
     <View className={styles.container}>
       <PullToRefresh disabled={!refresherEnabled} onRefresh={onRefresh}>
@@ -37,6 +40,7 @@ function InfiniteScroll({
           scrollY
           className={styles.scrollBox}
           scrollTop={scrollTop}
+          onScroll={onScroll}
           onScrollToLower={onScrollToLower}
         >
           {children}
