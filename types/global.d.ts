@@ -17,3 +17,11 @@ declare namespace NodeJS {
   }
 }
 
+declare namespace JSX {
+  type Element = ReactElement
+  type ElementClass = ReactElementClass
+  interface ReactElement extends React.ReactElement<any, any> { }
+  interface ReactElementClass extends React.Component<any> {
+      render(): React.ReactNode
+  }
+}

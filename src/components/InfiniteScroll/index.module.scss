@@ -1,0 +1,35 @@
+.container {
+  height: 100%;
+  .scrollBox {
+    height: 100%;
+    .loadMore {
+      display: flex;
+      justify-content: center;
+      font-size: 13px;
+      padding: 16px 0;
+      align-items: center;
+      .loading {
+        width: 18px;
+        height: 18px;
+      }
+      text {
+        margin-left: 6px;
+        color: #666;
+      }
+    }
+    .noMore {
+      padding: 16px 0;
+      text-align: center;
+      font-size: 13px;
+      color: #666;
+    }
+  }
+  :global {
+    .nut-pulltorefresh {
+      height: 100%;
+      .nut-pulltorefresh-content {
+        height: 100%;
+      }
+    }
+  }
+}

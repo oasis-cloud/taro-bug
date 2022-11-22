@@ -1,0 +1,42 @@
+.formItem {
+  margin-left: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f2f2f2;
+  .label {
+    padding-bottom: 6px;
+  }
+  .required {
+    color: red;
+    padding-right: 4px;
+  }
+  .textareaBox {
+    position: relative;
+    padding-right: 16px;
+    height: 100px;
+    textarea {
+      width: 100%;
+      height: 100%;
+    }
+    .readonly {
+      height: calc(100% - 20px);
+    }
+    :global {
+      .taro-textarea {
+        font-size: 14px;
+        resize: none;
+        height: calc(100% - 20px);
+        width: 100%;
+        &::placeholder {
+          color: #b3b5b9;
+        }
+      }
+    }
+    .limitHint {
+      position: absolute;
+      right: 16px;
+      bottom: 0;
+      color: #ccc;
+      height: 20px;
+    }
+  }
+}

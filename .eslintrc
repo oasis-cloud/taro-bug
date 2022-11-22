@@ -1,19 +1,40 @@
 {
-  "extends": ["taro/react"],
+  "extends": ["taro/react", "airbnb", "airbnb/hooks"],
+  "globals": {
+    "definePageConfig": true,
+    "AMap": true
+  },
   "rules": {
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
-    "linebreak-style": ["off"],
-    "no-nested-ternary": ["warn"],
-    "jsx-a11y/media-has-caption": ["off"],
-    "eqeqeq": ["off"],
-    "react/jsx-props-no-spreading": ["off"],
-    "indent": ["error", 2],
-    "no-multiple-empty-lines": ["error", {
-      "max": 2
-    }],
-    "spaced-comment": ["error", "always"],
-    "import/no-commonjs": "off",
-    // "semi": ["error", "never"]
+    "import/no-mutable-exports": "off",
+    "no-nested-ternary": "warn",
+    "eqeqeq": "off",
+    "semi": ["error", "never"],
+    "class-methods-use-this": "off",
+    "react/jsx-props-no-spreading": "off",
+    "no-multiple-empty-lines": ["error", { "max": 1 }],
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".jsx"] }],
+    "no-console": "off",
+    "react/self-closing-comp": "off",
+    "object-curly-newline": "off",
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "import/no-import-module-exports": "off",
+    "global-require": "off",
+    "arrow-body-style": "off",
+    "react/no-unused-class-component-methods": "off",
+    "react/destructuring-assignment": "off",
+    "no-plusplus": "off",
+    "radix": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "import/prefer-default-export": "off",
+    "no-param-reassign": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "no-use-before-define": ["error", { "functions": false }],
+    "react/require-default-props": "off",
+    "max-len": "warn",
+    "default-param-last": "off",
+    "react/jsx-one-expression-per-line": "off"
   }
 }

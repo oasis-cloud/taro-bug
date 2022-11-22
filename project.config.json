@@ -1,15 +1,31 @@
 {
-  "miniprogramRoot": "./dist",
-  "projectname": "taro-test",
+  "miniprogramRoot": "dist/weapp/",
+  "projectname": "taro-app",
   "description": "",
-  "appid": "touristappid",
+  "appid": "wxd68ed0f4f0d2ec7f",
   "setting": {
     "urlCheck": true,
     "es6": false,
     "enhance": false,
     "compileHotReLoad": false,
     "postcss": false,
-    "minified": false
+    "minified": false,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    }
   },
-  "compileType": "miniprogram"
+  "compileType": "miniprogram",
+  "libVersion": "2.26.2",
+  "srcMiniprogramRoot": "dist/weapp/",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "condition": {},
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  }
 }

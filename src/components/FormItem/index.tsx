@@ -1,0 +1,7 @@
+export { default as MyUpload } from './MyUpload'
+export { default as MyDoubleInput } from './MyDoubleInput'
+export { default as MyInput } from './MyInput'
+export { default as MySelect } from './MySelect'
+export { default as MyTextarea } from './MyTextarea'
+export { default as MyDatePicker } from './MyDatePicker'
+export { default as MyMultiUpload } from './MyMultiUpload'

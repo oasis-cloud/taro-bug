@@ -1,0 +1,40 @@
+.formItem {
+  margin-left: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f2f2f2;
+  .label {
+    padding-bottom: 6px;
+  }
+  .required {
+    color: red;
+    padding-right: 4px;
+  }
+  input {
+    padding-right: 16px;
+  }
+  :global {
+    .weui-input {
+      font-size: 14px;
+      height: 24px;
+      &::placeholder {
+        color: #b3b5b9;
+      }
+    }
+  }
+  &.alignLeft {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    .label {
+      padding: 0;
+    }
+    input {
+      flex: 1;
+      padding-left: 16px;
+    }
+  }
+  .readonly {
+    height: 24px;
+    line-height: 24px;
+  }
+}
