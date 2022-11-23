@@ -1,7 +1,7 @@
 import { useEffect, useReducer, useState } from 'react'
 import Taro, { useLoad } from '@tarojs/taro'
 import { Image, Text, View } from '@tarojs/components'
-import { Button } from '@nutui/nutui-react-taro'
+import { Button, Rate } from '@nutui/nutui-react-taro'
 import InfiniteScroll from '@/components/InfiniteScroll'
 import styles from './index.module.scss'
 import { MyDatePicker } from '@/components/FormItem'
@@ -34,6 +34,7 @@ function Index() {
   return (
     <View className={styles.indexPage}>
       <MyDatePicker type="date" label="测试" name="666" />
+      <Rate modelValue={3} />
       {/* <View className={styles.listBox}>
         <InfiniteScroll
           refresherEnabled
