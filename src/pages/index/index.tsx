@@ -4,6 +4,7 @@ import { Image, Text, View } from '@tarojs/components'
 import { Button } from '@nutui/nutui-react-taro'
 import InfiniteScroll from '@/components/InfiniteScroll'
 import styles from './index.module.scss'
+import { MyDatePicker } from '@/components/FormItem'
 
 function Index() {
   const [activityList, setActivityList] = useState<any[]>([])
@@ -32,7 +33,8 @@ function Index() {
   })
   return (
     <View className={styles.indexPage}>
-      <View className={styles.listBox}>
+      <MyDatePicker type="date" label="测试" name="666" />
+      {/* <View className={styles.listBox}>
         <InfiniteScroll
           refresherEnabled
           onRefresh={onRefresh}
@@ -47,7 +49,7 @@ function Index() {
           ))}
         </InfiniteScroll>
       </View>
-      <Button type="danger" onClick={() => updateRefreshTimes()} className={styles.btn}>点这里回顶部</Button>
+      <Button type="danger" onClick={() => updateRefreshTimes()} className={styles.btn}>点这里回顶部</Button> */}
     </View>
   )
 }

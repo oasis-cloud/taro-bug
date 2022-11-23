@@ -29,7 +29,7 @@ function MyDatePicker({
   onChange,
 }: IProps) {
   const [pickerVisible, setPickerVisible] = useState(false)
-  const [currVal, setCurrVal] = useState('')
+  const [currVal, setCurrVal] = useState(value)
   const handles = {
     datetime: (arr) => {
       const date = arr.slice(0, 3)
@@ -69,7 +69,7 @@ function MyDatePicker({
         {!readonly && <Image src={arrowIcon}></Image>}
       </View>
       <DatePicker
-        modelValue={value ? new Date(value) : new Date()}
+        modelValue={currVal ? new Date(currVal) : new Date()}
         title={label}
         minDate={minDate}
         maxDate={maxDate}
