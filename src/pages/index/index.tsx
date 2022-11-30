@@ -31,26 +31,18 @@ function Index() {
       { name: '6' },
     ])
   })
+  const handleClick = () => {
+    Taro.showActionSheet({
+      itemList: ['1', '2', '3'],
+      success(res) {
+      },
+    })
+  }
   return (
     <View className={styles.indexPage}>
       <MyDatePicker type="date" label="测试" name="666" />
       <Rate modelValue={3} />
-      {/* <View className={styles.listBox}>
-        <InfiniteScroll
-          refresherEnabled
-          onRefresh={onRefresh}
-          noMore={noMore}
-          onReachBottom={onReachBottom}
-          reloadDeps={refreshTimes}
-        >
-          {activityList.map((item) => (
-            <View className={styles.listItem} key={item.id}>
-              {item.name}
-            </View>
-          ))}
-        </InfiniteScroll>
-      </View>
-      <Button type="danger" onClick={() => updateRefreshTimes()} className={styles.btn}>点这里回顶部</Button> */}
+      <Button onClick={handleClick}>666</Button>
     </View>
   )
 }
