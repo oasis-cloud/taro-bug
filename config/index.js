@@ -28,11 +28,6 @@ const config = {
   sourceRoot: 'src',
   outputRoot: `dist/${process.env.TARO_ENV}`,
   plugins: [
-    ['tarojs-react-generator', {
-      typescript: true,
-      hooks: true,
-      styleTpl: 'tpl/style.ejs',
-    }],
     ['@tarojs/plugin-html'],
   ],
   defineConstants: {
